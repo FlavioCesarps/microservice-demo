@@ -22,8 +22,8 @@ public class CarService {
     }
 
     public Car save( Car car ){
-        Car userNew = carRepository.save( car );
-        return userNew;
+        Car carNew = carRepository.save( car );
+        return carNew;
     }
 
     public List<Car> byUserId( int userId ){
