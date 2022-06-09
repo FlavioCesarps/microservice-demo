@@ -7,11 +7,14 @@ import com.tutorial.userservice.model.Bike;
 import com.tutorial.userservice.model.Car;
 import com.tutorial.userservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
@@ -48,16 +51,20 @@ public class UserService {
     }
 
     // Rest Template
-    @GetMapping("/{userId}")
-    public List<Car> getCars( int userId ){
-        List<Car> cars = restTemplate.getForObject("http://car-service/cars/byuser/" + userId, List.class);
-        return cars;
+    public List getCars(int userId) {
+        Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Authorization", "Bearer " + jwt.getTokenValue());
+        ResponseEntity<List> cars = restTemplate.exchange("http://car-service/cars/byuser/" + userId, HttpMethod.GET, new HttpEntity<>(httpHeaders), List.class);
+        return cars.getBody();
     }
 
-    @GetMapping("/{userId}")
-    public List<Bike> getBikes( int userId ){
-        List<Bike> bikes = restTemplate.getForObject("http://bike-service/bikes/byuser/" + userId, List.class);
-        return bikes;
+    public List getBikes(int userId) {
+        Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Authorization", "Bearer " + jwt.getTokenValue());
+        ResponseEntity<List> bikes = restTemplate.exchange("http://bike-service/bikes/byuser/" + userId, HttpMethod.GET, new HttpEntity<>(httpHeaders), List.class);
+        return bikes.getBody();
     }
 
     //FeignClients
