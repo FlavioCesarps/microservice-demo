@@ -43,6 +43,7 @@
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 		</dependency>
 
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

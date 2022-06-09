@@ -78,16 +78,13 @@ public class UserController {
     //FeignClient
     @CircuitBreaker(name = "carsCB", fallbackMethod = "fallBackSaveCars")
     @PostMapping("/savecar/{userId}")
-    public ResponseEntity<Car> saveCarFeign(@PathVariable("userId") int userId, @RequestBody Car car){
-
-        if( userService.getUserById( userId ) == null ){
+    public ResponseEntity<Car> saveCar(@PathVariable("userId") int userId, @RequestBody Car car) {
+        if(userService.getUserById(userId) == null)
             return ResponseEntity.notFound().build();
-        }
-
-        Car carNew = userService.saveCar( userId, car );
+        Car carNew = userService.saveCar(userId, car);
         return ResponseEntity.ok(car);
-
     }
+
 
     @CircuitBreaker(name = "bikesCB", fallbackMethod = "fallBackSaveBikes")
     @PostMapping("/saveBike/{userId}")
