@@ -11,7 +11,7 @@ import java.util.List;
 //url = "http://localhost:8002/cars"
 public interface CarFeignClient {
 
-    @PostMapping()
+    @PostMapping("/cars")
     Car save (@RequestBody Car car);
 
     @GetMapping("/cars/byuser/{userID}")

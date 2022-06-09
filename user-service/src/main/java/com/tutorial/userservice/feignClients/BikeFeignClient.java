@@ -10,7 +10,7 @@ import java.util.List;
 @FeignClient(name = "bike-service")
 public interface BikeFeignClient {
 
-    @PostMapping()
+    @PostMapping("/bikes")
     Bike save (@RequestBody Bike bike);
 
     @GetMapping("/bikes/byuser/{userID}")
