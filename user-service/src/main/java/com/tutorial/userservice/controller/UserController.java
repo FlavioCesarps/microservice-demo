@@ -60,7 +60,7 @@ public class UserController {
         }
 
         List<Car> cars = userService.getCars( userId );
-        return ResponseEntity.ok().body( cars );
+        return ResponseEntity.ok(cars);
     }
     @CircuitBreaker(name = "bikesCB", fallbackMethod = "fallBackGetBikes")
     @GetMapping("/bikes/{userId}")
@@ -72,7 +72,7 @@ public class UserController {
         }
 
         List<Bike> bikes = userService.getBikes( userId );
-        return ResponseEntity.ok().body( bikes );
+        return ResponseEntity.ok(bikes);
     }
 
     //FeignClient
@@ -98,7 +98,7 @@ public class UserController {
         }
 
         Bike bikeNew = userService.saveBike( userId, bike );
-        return ResponseEntity.ok(bikeNew);
+        return ResponseEntity.ok(bike);
 
     }
     @CircuitBreaker(name = "allCB", fallbackMethod = "fallBackGetAll")
