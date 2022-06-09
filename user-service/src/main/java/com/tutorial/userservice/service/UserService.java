@@ -50,13 +50,13 @@ public class UserService {
     // Rest Template
     @GetMapping("/{userId}")
     public List<Car> getCars( int userId ){
-        List<Car> cars = restTemplate.getForObject("http://localhost:8002/cars/byuser/" + userId, List.class);
+        List<Car> cars = restTemplate.getForObject("http://car-service/cars/byuser/" + userId, List.class);
         return cars;
     }
 
     @GetMapping("/{userId}")
     public List<Bike> getBikes( int userId ){
-        List<Bike> bikes = restTemplate.getForObject("http://localhost:8003/bikes/byuser/" + userId, List.class);
+        List<Bike> bikes = restTemplate.getForObject("http://bike-service/bikes/byuser/" + userId, List.class);
         return bikes;
     }
 
