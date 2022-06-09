@@ -6,7 +6,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//url = "http://localhost:8003/bikes"
 @FeignClient(name = "bike-service")
 public interface BikeFeignClient {
 

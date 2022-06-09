@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed05015-cd9b-4dfe-bc3e-fa0d0e34f554" name="Changes" comment="" />
+    <list default="true" id="2ed05015-cd9b-4dfe-bc3e-fa0d0e34f554" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__com_nimbusds_content_type_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__com_nimbusds_lang_tag_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_9_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_9_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_oauth2_client_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_client_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_core_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_jose_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/gateway-service/src/main/java/com/tutorial/gateway/service/controller/GatewayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/gateway-service/src/main/java/com/tutorial/gateway/service/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-data/gateway-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/gateway-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/tutorial/userservice/feignClients/BikeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/tutorial/userservice/feignClients/BikeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
