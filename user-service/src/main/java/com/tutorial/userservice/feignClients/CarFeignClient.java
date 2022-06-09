@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @FeignClient(name = "car-service")
-@RequestMapping("/cars")
+
 //url = "http://localhost:8002/cars"
 public interface CarFeignClient {
 
     @PostMapping()
     Car save (@RequestBody Car car);
 
-    @GetMapping("/byuser/{userID}")
+    @GetMapping("/cars/byuser/{userID}")
     List<Car> getCars(@PathVariable int userID);
 }
