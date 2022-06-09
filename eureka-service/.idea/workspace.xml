@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed05015-cd9b-4dfe-bc3e-fa0d0e34f554" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../bike-service/src/main/java/com/tutorial/bikeservice/security/BikeSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../car-service/src/main/java/com/tutorial/carservice/security/CarSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bike-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bike-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bike-service/src/main/java/com/tutorial/bikeservice/service/BikeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bike-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../bike-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../car-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../car-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../car-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/tutorial/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/tutorial/userservice/service/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="2ed05015-cd9b-4dfe-bc3e-fa0d0e34f554" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
